@@ -1,4 +1,4 @@
-# ⛅ Stores Android App by hva94 - [linkedin.com/in/hva94](https://www.linkedin.com/in/hva94/)
+# 🏬 Stores Android App by hva94 - [linkedin.com/in/hva94](https://www.linkedin.com/in/hva94/)
 ## Stores (CRUD based Android Application with Room Database)
  Keep your favorites stores in one place.
 
