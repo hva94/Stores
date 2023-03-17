@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hvasoft.stores.presentation.main_stores.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_editStoreFragment"
+            app:destination="@id/editStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStoreFragment"
+        android:name="com.hvasoft.stores.presentation.edit_store.EditStoreFragment"
+        android:label="fragment_edit_store"
+        tools:layout="@layout/fragment_edit_store">
+        <action
+            android:id="@+id/action_editStoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="currentStore"
+            app:argType="com.hvasoft.stores.domain.model.Store"
+            app:nullable="false" />
+    </fragment>
+</navigation>
